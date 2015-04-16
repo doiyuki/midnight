@@ -1,0 +1,6 @@
+<%= form_for @area do |form| %>
+  <%= form.collection_select :area_name, Area.all, :area_name, :area_name%>
+  <div class="actions">
+    <%= form.submit 'submit' %>
+  </div>
+<% end %>
