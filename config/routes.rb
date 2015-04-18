@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'chats/index'
+
   get 'programs/index'
 
   get 'areas/index'
