@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   get 'areas/index'
 
-  get 'areas/show'
-
   root controller: 'areas', action: 'index'
 
   resources :areas

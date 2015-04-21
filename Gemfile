@@ -52,4 +52,7 @@ group :development, :test do
   # To parse XML of Radiko's API.
   gem 'nokogiri'
 
+  # For chat-room.
+  gem 'websocket-rails'
+
 end

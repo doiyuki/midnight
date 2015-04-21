@@ -1,2 +1,18 @@
-<h1>Chats#index</h1>
-<p>Find me in app/views/chats/index.html.erb</p>
+<h1>Chat Sample</h1>
+<div>ようこそ、<%= @user_name %>さん</div>
+
+<!-- jsに食わせたい情報などなど -->
+<div id="username" style="display:none;"><%= @user_name %></div>
+
+<!-- チャットのタイムラインとかテキストボックスとか -->
+<div id="timeline" style="margin:20px;">
+  <div id="chat" data-uri="<%= request.host %>:3000/websocket"></div>
+</div>
+
+<hr/>
+<div>
+ <form class="form-horizontal">
+   <input type="text" class="form-control" id="message_body" />
+   <input type="button" class="btn btn-primary" id="send" value="送信"/>
+ </form>
+</div>
