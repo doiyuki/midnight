@@ -1,7 +1,7 @@
 <ul>
   <% @titles.each do |title| %>
     <li>
-      <%= link_to title, controller: 'chats', action: 'index' %>
+      <%= link_to title, controller: 'chats', action: 'index', program: title %>
     </li>
   <% end %>
 </ul>

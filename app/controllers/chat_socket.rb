@@ -6,6 +6,7 @@ class ChatSocket < WebsocketRails::BaseController
   end
 
   def new_message
-    broadcast_message :new_message, message
+    room_id = message[:group_id]
+    WebsocketRails["#{room_id}"].trigger(:new_message, message)
   end
 end

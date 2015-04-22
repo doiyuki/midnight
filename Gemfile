@@ -39,6 +39,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Underscore.string
 gem 'underscore-string-rails'
 
+# Gon
+gem 'gon'
+
+# To parse XML of Radiko's API.
+gem 'nokogiri'
+
+# For chat-room.
+gem 'websocket-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -48,11 +57,5 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
-  # To parse XML of Radiko's API.
-  gem 'nokogiri'
-
-  # For chat-room.
-  gem 'websocket-rails'
 
 end
