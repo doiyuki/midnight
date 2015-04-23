@@ -11,7 +11,7 @@ class @Socket
     @channel.bind 'new_message', @receiveMessage
 
   sendMessage: (event) =>
-    user_name = $('#username').text()
+    user_name = $('#user_name').val()
     message_body = $('#message_body').val()
     @dispatcher.trigger 'new_message',
       { name: user_name, body: message_body, group_id: @room_id }

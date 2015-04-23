@@ -1,9 +1,5 @@
 <%= include_gon %>
 <h1><%= @room_name %></h1>
-<div>ようこそ、<%= @user_name %>さん</div>
-
-<!-- jsに食わせたい情報などなど -->
-<div id="username" style="display:none;"><%= @user_name %></div>
 
 <!-- チャットのタイムラインとかテキストボックスとか -->
 <div id="timeline" style="margin:20px;">
@@ -13,6 +9,7 @@
 <hr/>
 <div>
  <form class="form-horizontal">
+   <input type="text" value="増田" class="form-control" id="user_name" />
    <input type="text" class="form-control" id="message_body" />
    <input type="button" class="btn btn-primary" id="send" value="送信"/>
  </form>
