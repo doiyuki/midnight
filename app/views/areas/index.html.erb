@@ -1,6 +1,14 @@
-<%= form_for @area do |form| %>
-  <%= form.collection_select :area_name, Area.all, :area_name, :area_name%>
-  <div class="actions">
+<!-- TODO ロゴ部分をh1, フォームを囲むブロック部分をdivで作る -->
+<!-- TODO フォームブロック内のfontはMontserrat、ロゴはDLLしたやつ -->
+<!-- TODO 日本語はnoto sans -->
+
+<div class="logo">midnight</div>
+<div class="area-selector-block">
+  <h1>Where are you hearing in ?</h1>
+  <!-- Below HTML structure is form -> select, input. -->
+  <%= form_for @area do |form| %>
+    <%= form.collection_select :area_name, Area.all, :area_name, :area_name%>
     <%= form.submit 'submit' %>
-  </div>
-<% end %>
+    </div>
+  <% end %>
+</div>

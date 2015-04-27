@@ -3,8 +3,75 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+  width: 100%;
+  height: 100%;
   display: block;
   margin: 0;
+  background:    -moz-linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* IE10 */
+  background:      -o-linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* W3C */
+
+  .logo {
+    width: 213px;
+    height: 36px;
+    font-size: 32px;
+    font-family: Montserrat;
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .area-selector-block {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      color: #000;
+      font-size: 18px;
+      font-family: Montserrat;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    // This class will be attached to area created by form_for.
+    .new_area {
+      select {
+        width: 100%;
+        height: 42px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: 'Noto Sans Japanese', serif;
+        padding: 0 20px 0 50px;
+        outline: none;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
+        background: #ff656c;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #e15960;
+        color: #fff;
+        font-weight: bold;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .areas {
