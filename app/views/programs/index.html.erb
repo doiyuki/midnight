@@ -1,7 +1,9 @@
-<ul>
-  <% @titles.each do |title| %>
-    <li>
-      <%= link_to title, controller: 'chats', action: 'index', program: title %>
-    </li>
+<div class="logo">midnight</div>
+<div class="program-selector-block">
+  <h1>What program do you hear ?</h1>
+  <%= form_for @program do |form| %>
+    <%= form.collection_select :program_name, @programs, :program_name, :program_name%>
+    <%= form.submit 'submit' %>
+    </div>
   <% end %>
-</ul>
+</div>
