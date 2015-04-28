@@ -1,16 +1,17 @@
 <%= include_gon %>
 <h1><%= @room_name %></h1>
 
-<!-- チャットのタイムラインとかテキストボックスとか -->
-<div id="timeline" style="margin:20px;">
-  <div id="chat" data-uri="<%= request.host %>:3000/websocket"></div>
-</div>
-
-<hr/>
-<div>
- <form class="form-horizontal">
-   <input type="text" value="増田" class="form-control" id="user_name" />
-   <input type="text" class="form-control" id="message_body" />
-   <input type="button" class="btn btn-primary" id="send" value="送信"/>
- </form>
+<div class="chat-block">
+  <div class="timeline-area">
+    <div id="timeline" style="margin:10px;">
+      <div id="chat" data-uri="<%= request.host %>:3000/websocket"></div>
+    </div>
+  </div>
+  <div class="message-area">
+    <form class="form-horizontal">
+      <input type="text" value="masuda" class="form-control" id="user_name" />
+      <input type="text" class="form-control" id="message_body" />
+      <input type="button" class="btn btn-primary" id="send" value="submit"/>
+    </form>
+  </div>
 </div>
