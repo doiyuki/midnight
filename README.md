@@ -9,7 +9,7 @@ This repository concludes the source of midnight.
 
 1. Checkout master repository.
 
-<tt>git checkout https://github.com/doiyuki/midnight</tt>
+<tt>git checkout https://github.com/doiyuki/midnight.git</tt>
 
 2. Setup for migration
 
