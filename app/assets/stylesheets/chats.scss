@@ -5,44 +5,41 @@
 body {
   width: 100%;
   height: 100%;
-  display: block;
   margin: 0;
   background:    -moz-linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* FF3.6+ */
   background:     -ms-linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* IE10 */
   background:      -o-linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* Opera 11.10+ */
   background:         linear-gradient(90deg, rgba(22, 34, 42, 0.4) 10%, rgba(58, 96, 115, 0.4) 90%), image-url("header_background.jpg"); /* W3C */
 
+  h1 {
+    text-align: center;
+    font-family: 'Noto Sans Japanese', serif;
+    font-size: 30px;
+    color: #fff;
+  }
+
   .chat-block {
     width: 80%;
-    height: 80%;
+    height: auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     border-top: 5px solid #ff656c;
-    margin: 0 auto;
-    position: relative;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
 
     .timeline-area {
+      height: 200px;
       background: #fff;
       border-radius: 5px;
       border-style: inset;
-      margin: 20px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 20%;
+      margin-bottom: 20px;
     }
 
     .message-area {
       background: #fff;
       border-style: none;
-      position: absolute;
-      padding: 20px;
-      top: 73%;
-      right: 0%;
-      left: 0%;
-      bottom: 0%;
 
       .form-horizontal {
         width: 100%;
