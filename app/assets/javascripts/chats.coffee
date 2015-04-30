@@ -23,3 +23,4 @@ class @Socket
 class @ChatsController
   index: ->
     window.socket = new Socket($('#chat').data('uri'), true)
+    console.log($('#chat').data('uri'))
