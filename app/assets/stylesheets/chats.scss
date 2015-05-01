@@ -35,6 +35,12 @@ body {
       border-radius: 5px;
       border-style: inset;
       margin-bottom: 20px;
+      overflow: scroll;
+
+      #chat {
+        font-family: 'Noto Sans Japanese', serif;
+        font-size: 14px;
+      }
     }
 
     .message-area {
