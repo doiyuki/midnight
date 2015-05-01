@@ -2,7 +2,7 @@
 <h1><%= @room_name %></h1>
 
 <div class="chat-block">
-  <div class="timeline-area">
+  <div id="timeline-area" class="timeline-area">
     <div id="timeline" style="margin:10px;">
       <div id="chat" data-uri="<%= request.host %>:<%= @port %>/websocket"></div>
     </div>

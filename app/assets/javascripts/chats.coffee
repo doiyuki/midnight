@@ -19,6 +19,8 @@ class @Socket
 
   receiveMessage: (message) ->
     $('#chat').append "#{message.name} 「#{message.body}」<br/>"
+    timeline_area = $('#timeline-area')
+    timeline_area.animate({ scrollTop: timeline_area.height() })
 
 class @ChatsController
   index: ->
