@@ -25,4 +25,11 @@ class @Socket
 class @ChatsController
   index: ->
     window.socket = new Socket($('#chat').data('uri'), true)
-    console.log($('#chat').data('uri'))
+
+    # To protect submitting by enter-key without css class named 'allow_submit'.
+    $(document).on 'keypress',
+      '#message_body',
+      (event) ->
+        enterKeyNumber = 13
+        isKeyEnter = event.keyCode == enterKeyNumber
+        $('#send').trigger('click') if isKeyEnter
